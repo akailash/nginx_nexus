@@ -9,6 +9,7 @@
 *.key
 *.pem
 *.crt
+*.csr
 
 # Folders
 _obj
