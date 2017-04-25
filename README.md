@@ -5,7 +5,8 @@ Steps:
 
 
     On host:
-        docker volume create --name nexus-data && docker network create intranet
+        docker volume create --name nexus-data 
+        docker network create intranet
 
         docker run -d --name nexus -v nexus-data:/nexus-data --restart unless-stopped --network intranet sonatype/docker-nexus3
 
